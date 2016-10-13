@@ -1,6 +1,6 @@
 # RServ
 
-This gem will allow for easy creation of websites without writing a single line of html.
+A new HTTP Back-End written in ruby .
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -19,9 +19,8 @@ Or install it yourself as:
 
 ## Usage
 
-To use this gem add the following line to a script: `server = RServ.HTTPServer.new(port: <port>)`
-Then start the server according to the gserver[https://github.com/ruby/gserver] documentatio
-
+`server = RServ.HTTPServer.new(<port>,<path prefix>,<additional gserver args>...)`
+Then, according to the [gserver documentation.](https://github.com/ruby/gserver) start the server using: `server.start` For logging use: `server.audit = true` before starting. 
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
